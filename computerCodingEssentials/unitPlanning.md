@@ -79,7 +79,7 @@ In this unit students will learn to use the command line to navigate directory t
 ### Transfer
 ### Essential Understandings
 - understand the difference between floating point numbers and integers in python
-- use all 7 mathematical operators in python correctly
+- use all 7 mathematical operators in python correctly, following the order of operations.
 - python documentation is the best first reference.
 ### Essential Questions
 - how are complex mathematical equations represented by plain text in python?
