@@ -3,6 +3,7 @@ In this lesson you will learn the 2 main data types of numbers in python, and al
 ## Lesson Goals
 - Use the python interpreter in the command line to perform mathematical operations
 - classify numbers as either floats or ints
+- understand the difference between floats and ints
 ## Key Terms to pay attention to
 - data types
 - float

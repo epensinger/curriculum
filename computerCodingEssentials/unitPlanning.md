@@ -50,18 +50,37 @@ In this unit students will learn to use the command line to navigate directory t
 - How are files arranged on the operating system?
 - How do I find where I am and navigate the directory tree?
 - How do I add and remove things from the directory tree?
+
+
+
 ## Unit 2 - Numbers and Math
 ### Lessons in this Unit
 #### Lesson 1 - Integers, floats and the interpreter
 - Use the python interpreter in the command line to perform mathematical operations
 - classify numbers as either floats or ints
+#### Lesson 2 - Operators
+- - Use the 7 mathematical operators in python
 ### Key Terms in this Unit
 - data types
 - float
 - int
+- exponentiation
+- modulo
+- integer division
 ### Syntax in this Unit
 - python3
+- +
+- -
+- *
+- /
+- **
+- %
+- //
 ### Transfer
 ### Essential Understandings
+- understand the difference between floating point numbers and integers in python
+- use all 7 mathematical operators in python correctly
+- python documentation is the best first reference.
 ### Essential Questions
+- how are complex mathematical equations represented by plain text in python?
 
