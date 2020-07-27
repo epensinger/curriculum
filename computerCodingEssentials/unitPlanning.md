@@ -1,0 +1,67 @@
+# Computer Coding Essentials Course Plan
+## Unit 1 Command Line
+### Lessons in this Unit
+#### Lesson 1 - Introduction
+- Access the command line in Repl.it (and on chromebook for fun)
+- Locate current absolute path of working directory
+- Navigate the file tree absolutely and relatively
+- Display the contents of a directory in the command line
+#### Lesson 2 - Creating
+- Create new directories using the command line
+- Create new files inside directories
+- Correctly add extensions to files of common types
+#### Lesson 3 - Editing
+- Move files using the command line
+- Rename files using the command line
+- Remove files using the command line
+- Delete directories using the command line
+### Keywords in this unit
+- pwd
+- ls
+- cd
+- cd ..
+- -a
+- -l
+- mkdir
+- touch
+- mv
+- rm
+- rmdir
+- rm -r
+- rm -rf
+### Terms in this unit
+- Command Line
+- absolute path
+- working directory
+- file tree
+- directory
+- extension
+- delete
+- rename
+- arguments - you probably won't get this fully quite yet
+- source
+- target
+### Transfer
+In this unit students will learn to use the command line to navigate directory trees, add files and directories, change files and directories, and remove files and directories.
+### Essential Understandings
+- Files are arranged into directory trees with parents and children and can be manipulated using the command line.
+- The command line is a faster way to do tasks that can be done with the GUI and it is often more powerful and therefore more dangerous.
+### Essential Questions
+- How are files arranged on the operating system?
+- How do I find where I am and navigate the directory tree?
+- How do I add and remove things from the directory tree?
+## Unit 2 - Numbers and Math
+### Lessons in this Unit
+#### Lesson 1 - Integers, floats and the interpreter
+- Use the python interpreter in the command line to perform mathematical operations
+- classify numbers as either floats or ints
+### Key Terms in this Unit
+- data types
+- float
+- int
+### Syntax in this Unit
+- python3
+### Transfer
+### Essential Understandings
+### Essential Questions
+
