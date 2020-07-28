@@ -59,7 +59,9 @@ In this unit students will learn to use the command line to navigate directory t
 - Use the python interpreter in the command line to perform mathematical operations
 - classify numbers as either floats or ints
 #### Lesson 2 - Operators
-- - Use the 7 mathematical operators in python
+- Use the 7 mathematical operators in python
+#### Lesson 3 - Order of Operations
+- Follow the order of operations when evaluating and writing equations in python.
 ### Key Terms in this Unit
 - data types
 - float
@@ -80,7 +82,6 @@ In this unit students will learn to use the command line to navigate directory t
 ### Essential Understandings
 - understand the difference between floating point numbers and integers in python
 - use all 7 mathematical operators in python correctly, following the order of operations.
-- python documentation is the best first reference.
 ### Essential Questions
 - how are complex mathematical equations represented by plain text in python?
 
