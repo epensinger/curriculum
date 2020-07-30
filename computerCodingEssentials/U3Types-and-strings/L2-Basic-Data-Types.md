@@ -55,3 +55,5 @@ In this lesson you will learn how data is classified into different types in Pyt
 - other languages are static typed - variables are typed at the start of the program and can't change type while the program is running.
 - Examples of Dynamically typed languages - Python, Ruby, Javascript
 - Examples of Statically typed languages - C, C++, Java, Haskell
+### Data Types Coding Exercise
+### Data Types Quiz
