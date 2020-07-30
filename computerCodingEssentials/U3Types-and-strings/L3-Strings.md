@@ -20,6 +20,19 @@ In this lesson you will learn how to use strings in some more complicated scenar
 
 ## Lesson Outline
 
+### String Methods
+- methods are functions that you can call on a specific item in Python.
+- call a method by putting a `.` followed by the method name and ()
+
+```python
+   msg = "You are amazing"
+   print(msg.upper())
+   print(msg.lower())
+   print(msg.capitalize())
+```
+There are tons of string methods, and most people memorize the ones they use frequently and look up the ones they don't.  The full list is on the
+[String Methods page](https://docs.python.org/3/library/stdtypes.html#string-methods) of the Python documentation site.
+
 ### Double vs. Single Quotes
 - when you use a single quote `'` python will treat everything that comes next as a string until it comes to another single quote.
 - same is true for double quotes
