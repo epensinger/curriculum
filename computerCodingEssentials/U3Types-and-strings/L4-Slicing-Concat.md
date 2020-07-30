@@ -83,7 +83,7 @@ In this lesson you will learn how to take strings apart and put them together.
     print(name)
     print("Hello student" + last)
 ```
-- use +- when adding something to a variable
+- use += when adding something to a variable
 
 ```python
     song = "twinkle"

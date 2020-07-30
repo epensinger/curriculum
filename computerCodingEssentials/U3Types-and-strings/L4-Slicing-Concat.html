@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>L4-Slicing-Concat</title>
+
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Slicing and Concatenating Strings</h1>
+
+<p>In this lesson you will learn how to take strings apart and put them together.</p>
+
+<h2 id="toc_1">Lesson Goals</h2>
+
+<ul>
+<li>Use the string index to access parts of strings</li>
+<li>Slice strings</li>
+<li>Concatenate strings</li>
+</ul>
+
+<h2 id="toc_2">Key Terms to pay attention to</h2>
+
+<ul>
+<li>concatenation</li>
+<li>string index</li>
+<li>slice</li>
+</ul>
+
+<h2 id="toc_3">Key syntaxes</h2>
+
+<ul>
+<li>[:]</li>
+</ul>
+
+<h2 id="toc_4">Lesson Activites</h2>
+
+<ul>
+<li>String Index Demo</li>
+<li>String Index Quiz</li>
+<li>String slicing Demo</li>
+<li>String slicing exercise</li>
+<li>String concatenation Demo</li>
+<li>String concatenation exercise</li>
+</ul>
+
+<h2 id="toc_5">Lesson Outline</h2>
+
+<h3 id="toc_6">String Index</h3>
+
+<ul>
+<li>every character in a string has an index, starting at 0</li>
+<li>use the index to access single characters in a string</li>
+<li><p>you can also count from the end of the string using negative numbers</p>
+
+<table>
+<thead>
+<tr>
+<th>h</th>
+<th>e</th>
+<th>l</th>
+<th>l</th>
+<th>o</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>-5</td>
+<td>-4</td>
+<td>-3</td>
+<td>-2</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>h</th>
+<th>o</th>
+<th>y</th>
+<th></th>
+<th>t</th>
+<th>h</th>
+<th>e</th>
+<th>r</th>
+<th>e</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>-10</td>
+<td>-9</td>
+<td>-8</td>
+<td>-7</td>
+<td>-6</td>
+<td>-5</td>
+<td>-4</td>
+<td>-3</td>
+<td>-2</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>to use the index put it in brackets after the variable name</p></li>
+</ul>
+
+<div><pre><code class="language-python">    last_name = &quot;Potter&quot;
+    last_initial = last_name[0]</code></pre></div>
+
+<h3 id="toc_7">String Length</h3>
+
+<ul>
+<li>Python has a built in function to find the length of strings</li>
+<li>the last index equals the length minus 1.</li>
+</ul>
+
+<div><pre><code class="language-python">    msg = &quot;Algebra is fun&quot;
+    msg_length = len(msg)</code></pre></div>
+
+<h3 id="toc_8">String Index Quiz</h3>
+
+<h3 id="toc_9">String Slicing</h3>
+
+<ul>
+<li>Slicing means getting a portion of a string</li>
+<li>Use the index to indicate which characters you want</li>
+<li>Use the first number to indicate the first character, then a colon.</li>
+<li>The second number is the stop index, it will take the characters before that index</li>
+</ul>
+
+<div><pre><code class="language-python">    course = &quot;Algebra&quot;
+    fist_3 = course[0:3] </code></pre></div>
+
+<div><pre><code class="language-python">    title = &quot;Very long string of words that no one has time to read&quot;
+    short_title = title[0:15]</code></pre></div>
+
+<h3 id="toc_10">String Slicing Exercise</h3>
+
+<h3 id="toc_11">String Concatenation</h3>
+
+<ul>
+<li>concatenation - combining two or more strings together</li>
+<li>in python, simply put them together with +</li>
+</ul>
+
+<div><pre><code class="language-python">    first, last = &quot;John&quot;, &quot;Smith&quot;
+    name = first + last
+    print(name)
+    print(&quot;Hello student&quot; + last)</code></pre></div>
+
+<ul>
+<li>use += when adding something to a variable</li>
+</ul>
+
+<div><pre><code class="language-python">    song = &quot;twinkle&quot;
+    print(song)
+    song += song
+    print(song)
+    song += &quot;little&quot;
+    pring(song)
+    song += &quot;star&quot;
+    print(song)</code></pre></div>
+
+<h3 id="toc_12">String Concatenation Exercise</h3>
+
+
+
+
+</body>
+
+</html>
