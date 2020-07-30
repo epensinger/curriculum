@@ -9,6 +9,7 @@ In this lesson you will learn how to store data in variables and use it in your 
 - variable assignment
 - static data
 - dynamic data
+- snake case
 ## Key syntaxes
 - assignment statement
 ## Lesson Activites

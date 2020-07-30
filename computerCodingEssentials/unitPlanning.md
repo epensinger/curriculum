@@ -85,3 +85,29 @@ In this unit students will learn to use the command line to navigate directory t
 ### Essential Questions
 - how are complex mathematical equations represented by plain text in python?
 
+## Unit 3 - Variables and Strings
+### Lessons in this unit
+#### Lesson 1 Variables
+- assign values to variables
+- update value of variables
+- naming restrictions and conventions
+### Transfer
+In this unit students will learn how to use variables to store user input and other data, manipulate data using variables, and print data to the screen in meaninful formats.
+### Essential Understandings
+- understand how to assign and use variables
+- comply with python variable naming restrictions and conventions
+- identify the 5 most common data types in python
+- learn to use strings and string methods
+- convert data from one type to another
+- collect user input
+### Essential Questions
+- how is data stored for use throughout the progam
+
+### Key Terms
+- variable
+- variable assignment
+- static data
+- dynamic data
+
+### Skills/Syntax
+- 
