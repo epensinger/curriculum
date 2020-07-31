@@ -12,6 +12,7 @@ In this lesson you will learn how to take strings apart and put them together.
 
 ## Key syntaxes
 - [:]
+- " " + " "
 
 ## Lesson Activites
 - String Index Demo

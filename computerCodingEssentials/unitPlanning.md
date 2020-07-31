@@ -91,17 +91,29 @@ In this unit students will learn to use the command line to navigate directory t
 - assign values to variables
 - update value of variables
 - naming restrictions and conventions
+
 #### Lesson 2 - Basic Data Types
 - Describe basic data types in python
 - Identify basic data types in python
+
 #### Lesson 3 - Strings
+
 - Store strings with quotation marks and apostrophes.
 - Use escape sequences to manipulate string formatting.
+
 #### Lesson 4 - Slicing and Concatenating
+- Use the string index to access parts of strings
+- Slice strings
+- Concatenate strings
+
 #### Lesson 5 - Converting Data Types
+- Use f-strings to add variables of various types to strings.
+- Use type functions to change the type of variables.
+- Create a program to convert from one unit of measurement to another.
 
 ### Transfer
 In this unit students will learn how to use variables to store user input and other data, manipulate data using variables, and print data to the screen in meaninful formats.
+
 ### Essential Understandings
 - understand how to assign and use variables
 - comply with python variable naming restrictions and conventions
@@ -109,6 +121,7 @@ In this unit students will learn how to use variables to store user input and ot
 - learn to use strings and string methods
 - convert data from one type to another
 - collect user input
+
 ### Essential Questions
 - how is data stored for use throughout the progam
 
@@ -126,6 +139,12 @@ In this unit students will learn how to use variables to store user input and ot
 - dictionary
 - curly braces
 - escape sequences
+- concatenation
+- string index
+- slice
+- f-strings
+- string interpolation
+
 ### Skills/Syntax
 - `True`, `False`
 - `""`
@@ -135,3 +154,9 @@ In this unit students will learn how to use variables to store user input and ot
 - `\\`
 - `\t`
 - `\"`
+- [:]
+- " " + " "
+- f({})(x)
+- int()
+- float()
+- str()
