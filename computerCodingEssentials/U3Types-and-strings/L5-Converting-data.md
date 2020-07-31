@@ -36,25 +36,30 @@ pring(msg) # ==> ERROR
 ```
 
 - F-strings perform string interpolation in python 3.6 and up (repl is on 3.8)
+
 ```python
 score = 0
 score += 10
 msg = f "you scored {score} points!"
 print(msg) # ==> you scored 10 points!
 ```
+
 - fyi, format method used in python 3.5 and below.
+
 ```python
 score = 0
 score += 10
 msg = "you scored {} points!".format(score)
 print(msg) # ==> you scored 10 points!
 ```
+
 ### String interpolation coding exercise
 
 ### Converting data types
 - type functions allow you to convert the type of a variable
 - this is why you should not ever use data types as variable names!
 - int() - converts the data to an integer (throws an error if not a number)
+
 ```python
 x = 10.2
 int(x)  # ==> 10
@@ -63,6 +68,7 @@ int(y) # ==> 15
 oops = "three"
 int(oops) # ==> ERROR
 ```
+
 - str() - converts the data to a string
 
 ```python
@@ -73,7 +79,9 @@ str(y) # ==> "15"
 oops = "three"
 str(oops) # ==> "three"
 ```
+
 - float() - converts the data to a float
+
 ```python
 x = 10
 float(x)  # ==> 10.0
@@ -82,6 +90,7 @@ float(y) # ==> 15.0
 oops = "three"
 float(oops) # ==> ERROR
 ```
+
 - type() - returns the type of a variable
 
 ```python
