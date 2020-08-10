@@ -6,20 +6,19 @@
 - Create HTML page about a "Coding" job (Headings, sections, ID's, lists)
 
 ### Lesson 2 - What's a Stack?
-- Identify different technologies that make up stacks (discussion board - research stacks)
+- Identify different technologies that make up stacks
 - Identify the main roles of the technologies in stacks
-- Review technologies that are in use at different companies (stackshare.io)
-- Create an HTML page to display stack icons in their different roles.(Headings, images, sections, ID's, images in lists.)
+- Explore the technologies in one stack and give an overview the stack
 
-### Lesson 3 - HTML Forms & mdn
-- Use MDN as a reference to learn about HTML components
-- Create a registration form to collect user data
-- Use appropriate action and method attributes.
-
-### Lesson 4 - Technologies table
+### Lesson 3 - Technologies table
 - Create a table containing various technologies.
 - List some companies that use those technologies 
 - Use the logos of the technologies and the companies.
+
+### Lesson 4 - HTML Forms & mdn
+- Use MDN as a reference to learn about HTML components
+- Create a registration form to collect user data
+- Use appropriate action and method attributes.
 
 ### Assessment
 - 3 separate HTML files will be reviewed for progress.

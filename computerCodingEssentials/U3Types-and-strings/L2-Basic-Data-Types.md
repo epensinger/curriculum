@@ -20,6 +20,7 @@ In this lesson you will learn how data is classified into different types in Pyt
 ## Lesson Activites
 - Data Types Table
 - Data types demo
+- Data Types exercise
 - Data types quiz
 ## Lesson Outline
 ### Booleans

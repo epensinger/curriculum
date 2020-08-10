@@ -26,6 +26,7 @@ In this lesson we will be reviewing more HTML tags, this time focusing on tables
 - Tables are used to show relationships between data
 - Building an HTML table is a good skill to practice nesting tags inside of other tags.
 - For code examples and explanation check out this [MDN Table Tutorial](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics)
+
 ### Create technologies table on webpage
 - After watching the demo and using [MDN Table Tutorial](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics) as a reference, create an HTML table  
 
