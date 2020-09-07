@@ -21,6 +21,7 @@ Being able to share ideas with your other people in your class is an important p
 - Zoom Chat / Discussion Board T-Chart
 
 ## Lesson Outline
+
 ### Intermediate Zooming Demo
 - review how you raise your hand in zoom
 - practice using the chat feature
