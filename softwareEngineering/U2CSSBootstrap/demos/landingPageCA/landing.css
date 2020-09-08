@@ -1,0 +1,19 @@
+body {
+    background: url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background: #607D8B;
+}
+
+#msg {
+    background: rgba(176,190,197 ,.75);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+* {
+    font-family: 'Share Tech Mono', monospace;
+}

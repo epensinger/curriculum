@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Bootstrap_Form_Code_Along</title>
+
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Bootstrap Form Code Along</h1>
+
+<h2 id="toc_1">Bootstrap Setup on the page</h2>
+
+<ul>
+<li>CSS link in the head</li>
+<li>JS in the bottom</li>
+</ul>
+
+<h2 id="toc_2">Add the Form</h2>
+
+<ol>
+<li>On getbootstrap.com navigate to components &gt; form</li>
+<li>Add the form
+<code>&lt;form&gt;&lt;/form&gt;</code></li>
+<li>
+Add the form group div
+<code>&lt;div class=&quot;form-group&quot;&gt;&lt;/div&gt;</code></li>
+<li>Paste in the email address group
+<code>&lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
+&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot;&gt;
+&lt;small id=&quot;emailHelp&quot; class=&quot;form-text text-muted&quot;&gt;We&#39;ll never share your email with anyone else.&lt;/small&gt;</code></li>
+<li>Adjust the email address group
+<code>&lt;label for=&quot;user_email&quot;&gt;Email address&lt;/label&gt;
+&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;user_email&quot; aria-describedby=&quot;emailHelp&quot;&gt;
+&lt;small id=&quot;emailHelp&quot; class=&quot;form-text text-muted&quot;&gt;We&#39;ll never share your email with anyone else.&lt;/small&gt;</code></li>
+<li>Add a button
+<code>&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;</code></li>
+<li>Play with button options (bootstrap&#39;s color system)
+<code>class=&quot;btn btn-primary&quot;
+class=&quot;btn btn-secondary&quot;
+class=&quot;btn btn-success&quot;
+class=&quot;btn btn-danger&quot;
+class=&quot;btn btn-warning&quot;
+class=&quot;btn btn-info&quot;
+class=&quot;btn btn-light&quot;
+class=&quot;btn btn-dark&quot;</code></li>
+<li> Add a file input
+<code>&lt;form&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;profile_upload&quot;&gt;Profile Uploadt&lt;/label&gt;
+&lt;input type=&quot;file&quot; class=&quot;form-control-file&quot; id=&quot;profile_upload&quot;&gt;
+&lt;/div&gt;
+&lt;/form&gt;</code></li>
+<li>Add a check box
+<code>&lt;div class=&quot;form-check&quot;&gt;
+&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;signUp&quot;&gt;
+&lt;label class=&quot;form-check-label&quot; for=&quot;signUp&quot;&gt;
+Join the Mailing List
+&lt;/label&gt;
+&lt;/div&gt;</code></li>
+<li> Get the user&#39;s password
+<code>&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;user_password&quot;&gt;Password&lt;/label&gt;
+&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;user_password&quot;&gt;
+&lt;/div&gt;</code></li>
+
+<h2>Add a Navbar while we are at it.</h2>
+<li>Add the navbar wrapper
+<code>&lt;nav class=&quot;navbar navbar-light bg-light&quot;&gt;&lt;/nav&gt;</code></li>
+<li> Add the menu items
+<code>&lt;div class=&quot;navbar-nav&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Services&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Pricing&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Meet The Team&lt;/a&gt;
+  &lt;/div&gt;</code></li>
+<li>Add a Dropdown
+<code>&lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+      Services&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+    &lt;/div&gt;
+</code></li>
+<li>Make it go away on narrow screens
+- add this around the &quot;navbar nav&quot; to make whatever is inside this div collapse then the navbar collapses
+<code>&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;</code></li>
+<li>add <code>navbar-expand-lg</code> to the nav element to make it expand when it hits the large breakpoint.</li>
+<li>breakpoints are listed in the layout overview page in the bootstrap docs.</li>
+<li> Add a toggler to expand the menu on smaller screens.
+<code>&lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarNav&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;</code>
+<ul>
+  <li>bootstrap is using its grid system to stack the items in the nav on a small screen and have them unstacked on a wider screen.  You will learn how to use that grid soon.</li>
+  <li>the data target matches the ID of the &quot;navbarNav&quot; so it will open the navbarNav</li>
+</ul>
+
+5.  Add a Navbar Brand to show up on all screens
+<code>&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;</code></li>
+</ol>
+
+
+
+
+</body>
+
+</html>
