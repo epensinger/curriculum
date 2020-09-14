@@ -12,8 +12,7 @@ In this lesson I'll show you how to make a bootstrap style landing page for a we
 - align
 - justify
 
-## Key syntaxes
-- 
+
 ## Lesson Activites
 - Landing Page Code Along
 - Use navbars to bring your technologies table, coding jobs page, and form together into a "site"
