@@ -1,6 +1,7 @@
 # Variables
 In this lesson you will learn how to declare and use variables in Javascript
 
+
 -----
 
 ## Lesson Goals
@@ -9,10 +10,12 @@ In this lesson you will learn how to declare and use variables in Javascript
 - Use camelCase to label variables
 - Understand the role of Null and Undefined as stored in variables
 
+
 ----
 
 ## Key Terms to pay attention to
 - variable
+
 
 ----
 
@@ -23,15 +26,18 @@ In this lesson you will learn how to declare and use variables in Javascript
 - null
 - undefined
 
+
 ----
 
 ## Lesson Outline
+
 
 ----
 
 ### Storing Data in Javascript
 - Data is stored in containers called variables so we can use it throughout our code.
 - Official definition: in computer programming, a variable is a storage location paired with an associated symbolic name (an identifier) which contains a value. 
+
 
 ----
 
@@ -52,6 +58,7 @@ if (name === 'Adam') {
 }
 ```
 
+
 ----
 
 ### A more complex example
@@ -68,6 +75,7 @@ button.onclick = function() {
   alert('Hello ' + name + ', nice to see you!');
 }
 ```
+
 
 ----
 
@@ -87,6 +95,7 @@ const IDnum = "058305";
 ``` 
 - Three options in JS - var, let, const.
 
+
 ----
 
 ### Javascript History Lesson
@@ -99,6 +108,7 @@ const IDnum = "058305";
 - All browsers accept var, MOST browsers accept let and const.
 - Older code definitely only has var.
 
+
 ----
 
 ### Differentiating between var, let, const
@@ -108,6 +118,7 @@ const IDnum = "058305";
     - initialization - the program makes space in memory for that variable.
 3. To what extent can you cange it?
 
+
 ----
 
 #### Var
@@ -116,6 +127,7 @@ const IDnum = "058305";
     - if you try to use the variable before a value has been assigned it will return undefined rather than throwing an error
 3.  You can redeclare and reassign it whenever you like.
     - score += 5.
+
 
 ----
 
@@ -129,6 +141,7 @@ const IDnum = "058305";
 3.  You can reassign it, but not redeclare it within it's scope.
     - score += 5 works, but once I said let score = 5, I can't say let score = 5 again - __in that scope__
 
+
 ----
 
 #### Const
@@ -141,12 +154,14 @@ const IDnum = "058305";
     - often used for libraries that you import into the program as JS objects
     - you may forget this exists before you use it.
 
+
 ----
 
 #### General Usage Guidelines
 - Use const any time you can
 - Use let if you can't use const
 - Use var if you can't use let, but you can usually come up with a way to use let
+
 
 ----
 
@@ -178,6 +193,7 @@ let name = "Fluffy";
 let age = 2;
 ```
 
+
 ----
 
 - Step 3 - Use it
@@ -194,6 +210,7 @@ if (age >= 3) {
 };
 ```
 
+
 ----
 
 ### Naming Variables
@@ -205,6 +222,7 @@ if (age >= 3) {
 - Variables are case sensitive — so myage is a different variable from myAge.
 - One last point: you also need to avoid using JavaScript reserved words as your variable names — by this, we mean the words that make up the actual syntax of JavaScript! So, you can't use words like var, function, let, and for as variable names. Browsers recognize them as different code items, and so you'll get errors.  If it turns a weird color, that's a good indicator you can't use it as a variable name.
 - (From MDN variables page)
+
 
 ----
 
@@ -218,6 +236,7 @@ finalOutputValue
 audio1
 audio2
 ```
+
 
 ----
 
@@ -233,6 +252,7 @@ Document
 skjfndskjfnbdskjfb
 thisisareallylongstupidvariablenameman
 ```
+
 
 ----
 
@@ -251,11 +271,13 @@ thisisareallylongstupidvariablenameman
 currentPlayer = null; //the player died.  there is no current player
 ```
 
+
 ----
 
 
 ### Variables Exercise
 ### Variables Quiz
+
 
 ----
 
