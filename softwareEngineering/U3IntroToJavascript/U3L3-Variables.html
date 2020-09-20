@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Variables</h1>
+
+<p>In this lesson you will learn how to declare and use variables in Javascript</p>
+
+<h2 id="toc_1">Lesson Goals</h2>
+
+<ul>
+<li>Use var to define variables</li>
+<li>Use let and const to define variables</li>
+<li>Use camelCase to label variables</li>
+<li>Understand the role of Null and Undefined as stored in variables</li>
+</ul>
+
+<h2 id="toc_2">Key Terms to pay attention to</h2>
+
+<ul>
+<li>variable</li>
+</ul>
+
+<h2 id="toc_3">Key syntaxes</h2>
+
+<ul>
+<li>var</li>
+<li>let</li>
+<li>const</li>
+<li>null</li>
+<li>undefined</li>
+</ul>
+
+<h2 id="toc_4">Lesson Outline</h2>
+
+<h3 id="toc_5">Storing Data in Javascript</h3>
+
+<ul>
+<li>Data is stored in containers called variables so we can use it throughout our code.</li>
+<li>Official definition: in computer programming, a variable is a storage location paired with an associated symbolic name (an identifier) which contains a value. </li>
+</ul>
+
+<h3 id="toc_6">Variables in Action</h3>
+
+<div><pre><code class="language-javascript">let name = prompt(&#39;What is your name?&#39;);
+
+if (name === &#39;Adam&#39;) {
+  alert(&#39;Hello Adam, nice to see you!&#39;);
+} else if (name === &#39;Alan&#39;) {
+  alert(&#39;Hello Alan, nice to see you!&#39;);
+} else if (name === &#39;Bella&#39;) {
+  alert(&#39;Hello Bella, nice to see you!&#39;);
+} else if (name === &#39;Bianca&#39;) {
+  alert(&#39;Hello Bianca, nice to see you!&#39;);
+} else if (name === &#39;Chris&#39;) {
+  alert(&#39;Hello Chris, nice to see you!&#39;);
+}</code></pre></div>
+
+<h3 id="toc_7">A more complex example</h3>
+
+<div><pre><code class="language-markup">&lt;!--in the HTML file--&gt;
+&lt;button&gt;Press me&lt;/button&gt;</code></pre></div>
+
+<div><pre><code class="language-javascript">//in the Javascript file
+const button = document.querySelector(&#39;button&#39;);
+
+button.onclick = function() {
+  let name = prompt(&#39;What is your name?&#39;);
+  alert(&#39;Hello &#39; + name + &#39;, nice to see you!&#39;);
+}</code></pre></div>
+
+<h3 id="toc_8">Kinds of Variables</h3>
+
+<ul>
+<li>Declare the variable using a keyword and the variable name</li>
+</ul>
+
+<div><pre><code class="language-javascript">let name;
+var address;</code></pre></div>
+
+<ul>
+<li>can also declare in an assignment statement</li>
+</ul>
+
+<div><pre><code class="language-javascript:">let name = &quot;Johnny&quot;;
+var address = &quot;johnny@gmail.com&quot;;
+const IDnum = &quot;058305&quot;;</code></pre></div>
+
+<ul>
+<li>Three options in JS - var, let, const.</li>
+</ul>
+
+<h3 id="toc_9">Javascript History Lesson</h3>
+
+<ul>
+<li>1997 - Javascript created</li>
+<li>2015 - Let &amp; Const introduced - ECMAScript 6; aka Javascript 6
+
+<ul>
+<li>Javascript is technically ECMAScript as implemented by browsers (copyrights and legalese)</li>
+</ul></li>
+<li>There&#39;s now up to ECMAScript 10, but...</li>
+<li>ALL browsers can go up to 5.<br></li>
+<li>BIG change in version 6 - introduced let and const</li>
+<li>All browsers accept var, MOST browsers accept let and const.</li>
+<li>Older code definitely only has var.</li>
+</ul>
+
+<h3 id="toc_10">Differentiating between var, let, const</h3>
+
+<h4 id="toc_11">2 Big differences:</h4>
+
+<ol>
+<li>What&#39;s the scope?</li>
+<li>How is it initialized?
+
+<ul>
+<li>initialization - the program makes space in memory for that variable.</li>
+</ul></li>
+<li>To what extent can you cange it?</li>
+</ol>
+
+<h4 id="toc_12">Var</h4>
+
+<ol>
+<li> Scope is the &quot;current execution context&quot; either the whole function or the whole program - &quot;global scope&quot;</li>
+<li> Var is initialized when the program starts and is set to undefined if no value given.
+
+<ul>
+<li>if you try to use the variable before a value has been assigned it will return undefined rather than throwing an error</li>
+</ul></li>
+<li> You can redeclare and reassign it whenever you like.
+
+<ul>
+<li>score += 5.</li>
+</ul></li>
+</ol>
+
+<h4 id="toc_13">Let</h4>
+
+<ol>
+<li> Scope is the current code block and any sub-blocks- &quot;block scope&quot;
+
+<ul>
+<li>block - code set off in curly braces; sub-block - any blocks that are within that scope - a nested if statement for example.</li>
+<li>if you declare it outside of a block it will scope to the whole program.</li>
+<li>you could have several loops that use a variable called i or counter and bc you said let, they won&#39;t interfere with each other.</li>
+</ul></li>
+<li> Let is initialized when the program starts, will throw a reference error if no value given.
+
+<ul>
+<li>if you declare it inside a block, then try to use it outside a block it will throw an error.</li>
+</ul></li>
+<li> You can reassign it, but not redeclare it within it&#39;s scope.
+
+<ul>
+<li>score += 5 works, but once I said let score = 5, I can&#39;t say let score = 5 again - <strong>in that scope</strong></li>
+</ul></li>
+</ol>
+
+<h4 id="toc_14">Const</h4>
+
+<ol>
+<li> Scope is the current code block and any sub-blocks - &quot;block scope&quot;
+
+<ul>
+<li>just like let</li>
+</ul></li>
+<li> Initialized when the program starts and must have a value at that time.
+
+<ul>
+<li>because you can&#39;t reassign it, it will be what it is.</li>
+</ul></li>
+<li> Cannot be reassigned or redeclared.
+
+<ul>
+<li>not a good way to store values that will change.</li>
+<li>often used for libraries that you import into the program as JS objects</li>
+<li>you may forget this exists before you use it.</li>
+</ul></li>
+</ol>
+
+<h4 id="toc_15">General Usage Guidelines</h4>
+
+<ul>
+<li>Use const any time you can</li>
+<li>Use let if you can&#39;t use const</li>
+<li>Use var if you can&#39;t use let, but you can usually come up with a way to use let</li>
+</ul>
+
+<h3 id="toc_16">The reality</h3>
+
+<ul>
+<li>Lots of JS still uses var</li>
+<li>Lots of the examples I have in this course still use var</li>
+<li>You will see let and const and var and need to be comfortable with all of them.</li>
+<li>Ms. Pensinger&#39;s executive decision:
+
+<ul>
+<li>if the program works in the way we want, we aren&#39;t going to sweat whether we used let or var or const.</li>
+</ul></li>
+</ul>
+
+<h3 id="toc_17">Using Variables</h3>
+
+<ul>
+<li>Step 1 - Declare it</li>
+</ul>
+
+<div><pre><code class="language-javascript">let name;</code></pre></div>
+
+<ul>
+<li>Step 2 - Assign it</li>
+</ul>
+
+<div><pre><code class="language-javascript">name = &quot;Fluffy&quot;;</code></pre></div>
+
+<ul>
+<li>Step 1/2 (most common) - declare and assign it at once</li>
+</ul>
+
+<div><pre><code class="language-javascript">let name = &quot;Fluffy&quot;;
+let age = 2;</code></pre></div>
+
+<ul>
+<li>Step 3 - Use it</li>
+</ul>
+
+<div><pre><code class="language-javascript">console.log(&quot;Hello &quot; + name);
+age += 1;
+if (age &gt;= 3) {
+    console.log(&quot;Who&#39;s a big girl?&quot;);
+} else if (age &lt; 1) {
+    console.log(&quot;What a cute little baby!&quot;);
+} else {
+    console.log(&quot;Are you a good kitty?&quot;);
+};</code></pre></div>
+
+<h3 id="toc_18">Naming Variables</h3>
+
+<ul>
+<li>You shouldn&#39;t use other characters because they may cause errors or be hard to understand for an international audience.</li>
+<li>Don&#39;t use underscores at the start of variable names — this is used in certain JavaScript constructs to mean specific things, so may get confusing.</li>
+<li>Don&#39;t use numbers at the start of variables. This isn&#39;t allowed and causes an error.</li>
+<li>A safe convention to stick to is so-called &quot;lower camel case&quot;, where you stick together multiple words, using lower case for the whole first word and then capitalize subsequent words. </li>
+<li>Make variable names intuitive, so they describe the data they contain. Don&#39;t just use single letters/numbers, or big long phrases.</li>
+<li>Variables are case sensitive — so myage is a different variable from myAge.</li>
+<li>One last point: you also need to avoid using JavaScript reserved words as your variable names — by this, we mean the words that make up the actual syntax of JavaScript! So, you can&#39;t use words like var, function, let, and for as variable names. Browsers recognize them as different code items, and so you&#39;ll get errors.  If it turns a weird color, that&#39;s a good indicator you can&#39;t use it as a variable name.</li>
+<li>(From MDN variables page)</li>
+</ul>
+
+<h3 id="toc_19">Examples of good variable names</h3>
+
+<div><pre><code class="language-javascript">age
+myAge
+init
+initialColor
+finalOutputValue
+audio1
+audio2</code></pre></div>
+
+<h3 id="toc_20">Examples of bad variable names</h3>
+
+<div><pre><code class="language-javascript">1
+a
+_12
+myage
+MYAGE
+var
+Document
+skjfndskjfnbdskjfb
+thisisareallylongstupidvariablenameman</code></pre></div>
+
+<h3 id="toc_21">Nullish Values</h3>
+
+<ul>
+<li>Nullish is a word which covers both undefined and null values</li>
+</ul>
+
+<h5 id="toc_22">Undefined</h5>
+
+<ul>
+<li>declared by never set to a value</li>
+<li>not possible for const</li>
+<li>You can test for this and attempt to rectify the situation without having the program throw an error.
+#### Null</li>
+<li>Explicitly empty, nothingness</li>
+<li>Again, something you can test for to make decisions.</li>
+</ul>
+
+<div><pre><code class="language-javascript">currentPlayer = null; //the player died.  there is no current player</code></pre></div>
+
+<h3 id="toc_23">Variables Exercise</h3>
+
+<h3 id="toc_24">Variables Quiz</h3>
+
+<h3 id="toc_25">Further Reading</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables">MDN Variables Article</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var">MDN Var Article</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let">MDN Let Article</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">MDN Const Article</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">MDN Null Article</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">MDN Undefined Article</a></li>
+</ul>
+
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+<script type="text/javascript">
+Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\w\W]*?\*\//,lookbehind:!0},{pattern:/(^|[^\\:])\/\/.*/,lookbehind:!0}],string:{pattern:/(["'])(\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0},"class-name":{pattern:/((?:\b(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[a-z0-9_\.\\]+/i,lookbehind:!0,inside:{punctuation:/(\.|\\)/}},keyword:/\b(if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,"boolean":/\b(true|false)\b/,"function":/[a-z0-9_]+(?=\()/i,number:/\b-?(?:0x[\da-f]+|\d*\.?\d+(?:e[+-]?\d+)?)\b/i,operator:/--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,punctuation:/[{}[\];(),.:]/};
+</script>
+
+<script type="text/javascript">
+Prism.languages.javascript=Prism.languages.extend("clike",{keyword:/\b(as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|var|void|while|with|yield)\b/,number:/\b-?(0x[\dA-Fa-f]+|0b[01]+|0o[0-7]+|\d*\.?\d+([Ee][+-]?\d+)?|NaN|Infinity)\b/,"function":/[_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*(?=\()/i}),Prism.languages.insertBefore("javascript","keyword",{regex:{pattern:/(^|[^\/])\/(?!\/)(\[.+?]|\\.|[^\/\\\r\n])+\/[gimyu]{0,5}(?=\s*($|[\r\n,.;})]))/,lookbehind:!0,greedy:!0}}),Prism.languages.insertBefore("javascript","class-name",{"template-string":{pattern:/`(?:\\\\|\\?[^\\])*?`/,greedy:!0,inside:{interpolation:{pattern:/\$\{[^}]+\}/,inside:{"interpolation-punctuation":{pattern:/^\$\{|\}$/,alias:"punctuation"},rest:Prism.languages.javascript}},string:/[\s\S]+/}}}),Prism.languages.markup&&Prism.languages.insertBefore("markup","tag",{script:{pattern:/(<script[\w\W]*?>)[\w\W]*?(?=<\/script>)/i,lookbehind:!0,inside:Prism.languages.javascript,alias:"language-javascript"}}),Prism.languages.js=Prism.languages.javascript;
+</script>
+
+<script type="text/javascript">
+Prism.languages.markup={comment:/<!--[\w\W]*?-->/,prolog:/<\?[\w\W]+?\?>/,doctype:/<!DOCTYPE[\w\W]+?>/,cdata:/<!\[CDATA\[[\w\W]*?]]>/i,tag:{pattern:/<\/?(?!\d)[^\s>\/=.$<]+(?:\s+[^\s>\/=]+(?:=(?:("|')(?:\\\1|\\?(?!\1)[\w\W])*\1|[^\s'">=]+))?)*\s*\/?>/i,inside:{tag:{pattern:/^<\/?[^\s>\/]+/i,inside:{punctuation:/^<\/?/,namespace:/^[^\s>\/:]+:/}},"attr-value":{pattern:/=(?:('|")[\w\W]*?(\1)|[^\s>]+)/i,inside:{punctuation:/[=>"']/}},punctuation:/\/?>/,"attr-name":{pattern:/[^\s>\/]+/,inside:{namespace:/^[^\s>\/:]+:/}}}},entity:/&#?[\da-z]{1,8};/i},Prism.hooks.add("wrap",function(a){"entity"===a.type&&(a.attributes.title=a.content.replace(/&amp;/,"&"))}),Prism.languages.xml=Prism.languages.markup,Prism.languages.html=Prism.languages.markup,Prism.languages.mathml=Prism.languages.markup,Prism.languages.svg=Prism.languages.markup;
+</script>
+
+
+</body>
+
+</html>
