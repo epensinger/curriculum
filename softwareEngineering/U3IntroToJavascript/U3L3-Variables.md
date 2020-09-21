@@ -135,7 +135,6 @@ const IDnum = "058305";
 1.  Scope is the current code block and any sub-blocks- "block scope"
     - block - code set off in curly braces; sub-block - any blocks that are within that scope - a nested if statement for example.
     - if you declare it outside of a block it will scope to the whole program.
-    - you could have several loops that use a variable called i or counter and bc you said let, they won't interfere with each other.
 2.  Let is initialized when the program starts, will throw a reference error if no value given.
     - if you declare it inside a block, then try to use it outside a block it will throw an error.
 3.  You can reassign it, but not redeclare it within it's scope.
