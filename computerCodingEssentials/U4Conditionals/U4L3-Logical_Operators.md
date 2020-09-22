@@ -63,6 +63,7 @@ else:
 
 ### Example - Not
 - only works with one statement (no double negatives here!)
+
 ```python
 if not is_weekend:
   print("go to work")
