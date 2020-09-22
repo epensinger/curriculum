@@ -1,5 +1,9 @@
 # Lesson 2 - Truthiness, Falsiness, and Comparison Operators
 In this lesson we will meet some values that are inherently truthy or falsey and we'll take a look at the operators that we can use to compare values.
+
+
+----
+
 ## Lesson Goals
 - Identify common truthy and falsey values
 - Use comparison operators to write conditional checks
