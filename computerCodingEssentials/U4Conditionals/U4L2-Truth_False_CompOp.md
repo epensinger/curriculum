@@ -5,7 +5,7 @@ In this lesson we will meet some values that are inherently truthy or falsey and
 - Use comparison operators to write conditional checks
 
 
----
+----
 
 ## Key Terms to pay attention to
 - truthiness 
@@ -20,7 +20,7 @@ In this lesson we will meet some values that are inherently truthy or falsey and
 - ```>=```
 
 
----
+----
 
 ## Lesson Outline
 ### Truthiness
@@ -36,7 +36,7 @@ else:
 ```
 
 
----
+----
 
 ### What is truthy?
 - Strings that aren't empty
@@ -44,7 +44,7 @@ else:
 - Most values
 
 
----
+----
 
 ### Falsiness
 - Some values are inherently falsey
@@ -58,7 +58,7 @@ else:
 ```
 
 
----
+----
 
 ### What is falsey?
 - Empty Objects
@@ -67,7 +67,7 @@ else:
 - 0
 
 
----
+----
 
 ### The value of Truthy and Falsey
 - Really helpful in determining if the user entered any value at all.
@@ -83,12 +83,12 @@ else:
 ```
 
 
----
+----
 
 ### Comparison Operators
 
 | Operator | What it does                                  | Example | Result if X = 1 and Y = 1 | Result if X = 1 and Y = 2 |
-|----------|-----------------------------------------------|---------|---------------------------|---------------------------|
+|-------------|--------------------------------------------------------------|------------|------------------------------------|------------------------------------|
 | ==       | Truthy if X has the same value as Y           | X == Y  | True                      | False                     |
 | !=       | Truthy if X does not have the same value as Y | X!=Y    | False                     | True                      |
 | >        | Truthy if X is greater than Y                 | X > Y   | False                     | False                     |
@@ -97,7 +97,7 @@ else:
 | <=       | Truthy if X is less than or equal to Y        | X <= Y  | True                      | True                      |
 
 
----
+----
 
 ### Comparison Operators Example
 ```python
@@ -121,7 +121,7 @@ else:
 ```
 
 
----
+----
 
 ### Comparison Operators Exercise 1
 
