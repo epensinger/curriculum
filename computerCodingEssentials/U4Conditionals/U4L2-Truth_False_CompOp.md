@@ -92,7 +92,7 @@ else:
 ### Comparison Operators
 
 | Operator | What it does                                  | Example | Result if X = 1 and Y = 1 | Result if X = 1 and Y = 2 |
-|-------------|--------------------------------------------------------------|------------|------------------------------------|------------------------------------|
+|------------|------------------------------------------------------------|------------|------------------------------------|------------------------------------|
 | ==       | Truthy if X has the same value as Y           | X == Y  | True                      | False                     |
 | !=       | Truthy if X does not have the same value as Y | X!=Y    | False                     | True                      |
 | >        | Truthy if X is greater than Y                 | X > Y   | False                     | False                     |
@@ -127,9 +127,7 @@ else:
 
 ----
 
-### Comparison Operators Exercise 1
+### Alien Score Exercise
 
-### Comparison Operators Exercise 2
-
-### Comparison Operators Exercise 3
+### Life Stages Exercise
 
