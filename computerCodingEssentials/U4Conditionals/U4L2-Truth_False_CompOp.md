@@ -4,6 +4,7 @@ In this lesson we will meet some values that are inherently truthy or falsey and
 - Identify common truthy and falsey values
 - Use comparison operators to write conditional checks
 
+
 ---
 
 ## Key Terms to pay attention to
@@ -18,12 +19,14 @@ In this lesson we will meet some values that are inherently truthy or falsey and
 - ```>=```
 - ```>=```
 
+
 ---
 
 ## Lesson Outline
 ### Truthiness
 - Some values are inherently truthy
 - to test truthiness in the interpreter:
+
 ```python
 name = "Lisa"
 if name:
@@ -32,6 +35,7 @@ else:
     print("Falsey")
 ```
 
+
 ---
 
 ### What is truthy?
@@ -39,10 +43,12 @@ else:
 - Numbers that aren't zero
 - Most values
 
+
 ---
 
 ### Falsiness
 - Some values are inherently falsey
+
 ```python
 score = 0
 if score:
@@ -50,6 +56,7 @@ if score:
 else: 
     print("Falsey")
 ```
+
 
 ---
 
@@ -59,11 +66,13 @@ else:
 - None
 - 0
 
+
 ---
 
 ### The value of Truthy and Falsey
 - Really helpful in determining if the user entered any value at all.
 - prevents you from an error if the string is empty
+
 ```python
 animal = input("enter your favorite animal")
 
@@ -73,7 +82,6 @@ else:
 	print("YOU DIDNT SAY ANYTHING!")
 ```
 
-### Truthy or Falsey "Quiz"
 
 ---
 
@@ -87,6 +95,7 @@ else:
 | <        | Truthy if X is less than Y                    | X < Y   | False                     | True                      |
 | >=       | Truthy if X is greater than or equal to Y     | X >= Y  | True                      | False                     |
 | <=       | Truthy if X is less than or equal to Y        | X <= Y  | True                      | True                      |
+
 
 ---
 
@@ -110,6 +119,7 @@ if age <= 5:
 else:
     print("Please buckle up!")
 ```
+
 
 ---
 
