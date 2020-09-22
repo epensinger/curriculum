@@ -46,6 +46,7 @@ alert("Your interwebs seem broken!  Pay me money and I'll fix it for you!")
 ### Console.log method
 - console.log() - will log information to the console when this line of code is run
 - super helpful for developers - prints information that users don't notice.
+
 ```javascript
 if err {
     console.log(err)
@@ -65,6 +66,7 @@ if (user == undefined){
 
 ### Prompt method
 - prompt() - like alert, will display what's in parenthesis in an alert window, but will also collect user input.
+
 ```javascript
 let user = prompt("Hi what's your name?");
 let age = prompt("How old are you?");
@@ -78,9 +80,11 @@ let favoriteColor = prompt("What's your favorite color?")
 - make HTML File
 - make new file w/ .js filetype
 - add
+
 ```html
  <script src = "file.js"></script>
 ```
+
 - best practice is to add JS file right before closing body tag.
 
 
