@@ -4,7 +4,7 @@ In this lesson we will write more complex logical statements that perform multip
 - Use and, or, and not to write complex conditional statements.
 
 
----
+----
 
 ## Key Terms to pay attention to
 - (you don't need to memorize the fancy names)
@@ -15,19 +15,19 @@ In this lesson we will write more complex logical statements that perform multip
 - not
 
 
----
+----
 
 ## Lesson Outline
 ### Logical Operators
 
 | Fancy Name          | Syntax | What it Does                        | Example                                                             |
-|---------------------|:------:|-------------------------------------|---------------------------------------------------------------------|
+|----------------------------|:--------:|-------------------------------------------------|--------------------------------------------------------------------------------------------|
 | Logical conjunction |   and  | Truthy if both A & B are true       | if is_wake_time and is_school_day:    print("get out of bed silly") |
 | Logical disjunction |   or   | Truthy if either A or B are true    | if am_tired or is_bedtime:    print("go to sleep")                  |
 | Logical negation    |   not  | Truthy if the opposite of A is true | if not is_weekend:    print("go to work")                           |
 
 
----
+----
 
 ### Example - AND
 ```python
@@ -42,7 +42,7 @@ else:
 ```
 
 
----
+----
 
 ### Example - OR
 ```python
@@ -54,12 +54,12 @@ else:
 ```
 
 
----
+----
 
 ### Classifying Food Exercise
 
 
----
+----
 
 ### Example - Not
 - only works with one statement (no double negatives here!)
@@ -70,7 +70,7 @@ if not is_weekend:
 ```
 
 
-----
+-----
 
 ### More complex nots:
 ```python
@@ -82,7 +82,7 @@ WHYYYY?????  - programmers are all about efficiency.
 If I already typed a complex conditional test, I can just copy and paste and use not.
 
 
-----
+-----
 
 ### Boolean Logic Quiz
 
