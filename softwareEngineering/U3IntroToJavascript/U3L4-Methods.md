@@ -83,7 +83,7 @@ let favoriteColor = prompt("What's your favorite color?")
 - add
 
 ```html
- <script src = "file.js"></script>
+<!-- <script src = "file.js"></script> -->
 ```
 
 - best practice is to add JS file right before closing body tag.
