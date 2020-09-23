@@ -32,6 +32,7 @@ In this lesson we will take a look at some built in Javascript methods and learn
 
 ### Alert Method
 - alert() - will display whatever is in parenthesis in an alert window when run.
+
 ```javascript
 alert("Welcome to my page, new friend!")
 alert("Hi, there, you have to click me!")
