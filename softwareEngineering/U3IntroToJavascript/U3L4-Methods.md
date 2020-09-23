@@ -80,14 +80,12 @@ let favoriteColor = prompt("What's your favorite color?")
 ### Linking a JS and HTML File
 - make HTML File
 - make new file w/ .js filetype
-- add
-
-```html
-<!-- <script src = "file.js"></script> -->
-```
-
 - best practice is to add JS file right before closing body tag.
 
+
+```html
+<script src = "file.js"></script>
+```
 
 ----
 

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>U4L1-Boolean_Logic</title>
+
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Boolean Logic</h1>
+
+<p>In this lesson you will learn to use bulean logic to control the flow of your program according to the current state of the program.</p>
+
+<hr>
+
+<h2 id="toc_1">Lesson Goals</h2>
+
+<ul>
+<li>Identify Truthy and Falsey values</li>
+<li>Use comparison operators to write conditional statements.</li>
+<li>Use logical operators to create complex conditional statements.</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_2">Key Terms to pay attention to</h2>
+
+<ul>
+<li>boolean</li>
+<li>comparison operators</li>
+<li>logical operators</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_3">Lesson Outline</h2>
+
+<h3 id="toc_4">Boolean Logic</h3>
+
+<ul>
+<li>Everything starts with the idea that a statement is either True or False</li>
+<li>Then we can combine those initial statements to create more complex statements that also evaluate to True or False</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_5">Truthy and Falsey Values</h3>
+
+<ul>
+<li>Values that aren&#39;t explicity true or false are inherently truthy or falsey when evaluated in a boolean context.
+#### Falsey Values:</li>
+<li>false, 0, &quot;&quot; (empty strings), null, undefined, NaN (not a number)</li>
+<li>Everything else is truthy.</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_6">Truthy &amp; Falsey Example</h3>
+
+<div><pre><code class="language-javascript">let name = &quot;&quot;;
+if age {
+    console.log(age)
+} else {
+    console.log(&quot;there is no name&quot;)
+}</code></pre></div>
+
+<hr>
+
+<h3 id="toc_7">Not</h3>
+
+<ul>
+<li>an exclamation mark means not.</li>
+<li>it&#39;s the opposite of whatever you see.</li>
+</ul>
+
+<div><pre><code class="language-javascript">let cat = &quot;fluffy&quot;
+
+if !cat {
+    console.log(&quot;there&#39;s no cat here!&quot;)
+}</code></pre></div>
+
+<hr>
+
+<h3 id="toc_8">Equality Operators in Javascript</h3>
+
+<div><pre><code class="language-javascript">let x = 99; // x is a number
+
+x == &quot;99&quot;  // this is true
+
+x === &quot;99&quot; // this is false
+
+let y = null;
+
+y == undefined //true
+
+y === undefined //false</code></pre></div>
+
+<p>== performs <em>type coercion</em> - it forces both to be the same type if possible
+=== tests to see if both are the same type</p>
+
+<hr>
+
+<h3 id="toc_9">A few interesting cases</h3>
+
+<div><pre><code class="language-javascript">true == 1    //==&gt; true  
+false == 0   //==&gt; true
+
+true === 1 //==&gt; false
+false === 0 //==&gt; false  
+
+// booleans are stored as 0 and 1!
+
+NaN == NaN //==&gt; false - it&#39;s not a value!  Weird.</code></pre></div>
+
+<hr>
+
+<h3 id="toc_10">Equality Operators mini Quiz</h3>
+
+<p>It&#39;s important to make sure you don&#39;t skip over the difference here!</p>
+
+<hr>
+
+<h3 id="toc_11">Comparison Operators</h3>
+
+<ul>
+<li>assume x = 5</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Operator</th>
+<th style="text-align: center">Name</th>
+<th style="text-align: center">Example</th>
+<th style="text-align: center">Result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">&gt;</td>
+<td style="text-align: center">Greater than</td>
+<td style="text-align: center">x &gt; 10</td>
+<td style="text-align: center">false</td>
+</tr>
+<tr>
+<td style="text-align: center">&gt;=</td>
+<td style="text-align: center">Greater than or equal to</td>
+<td style="text-align: center">x &gt;= 5</td>
+<td style="text-align: center">true</td>
+</tr>
+<tr>
+<td style="text-align: center">&lt;</td>
+<td style="text-align: center">Less than</td>
+<td style="text-align: center">x &lt;-50</td>
+<td style="text-align: center">false</td>
+</tr>
+<tr>
+<td style="text-align: center">&lt;=</td>
+<td style="text-align: center">Less than or equal to</td>
+<td style="text-align: center">x &lt;= 100</td>
+<td style="text-align: center">true</td>
+</tr>
+<tr>
+<td style="text-align: center">==</td>
+<td style="text-align: center">Equal to</td>
+<td style="text-align: center">x == &quot;5&quot;</td>
+<td style="text-align: center">true</td>
+</tr>
+<tr>
+<td style="text-align: center">!=</td>
+<td style="text-align: center">Not equal to</td>
+<td style="text-align: center">x != &quot;b&quot;</td>
+<td style="text-align: center">true</td>
+</tr>
+<tr>
+<td style="text-align: center">===</td>
+<td style="text-align: center">Equal value and type</td>
+<td style="text-align: center">x === &quot;5&quot;</td>
+<td style="text-align: center">false</td>
+</tr>
+<tr>
+<td style="text-align: center">!===</td>
+<td style="text-align: center">Not equal value or equal type</td>
+<td style="text-align: center">X !=== &quot;5&quot;</td>
+<td style="text-align: center">true</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h3 id="toc_12">Comparison Operators Quiz</h3>
+
+<p>If you are getting these mixed up you will struggle later.
+Let&#39;s make sure we know where we stand now.</p>
+
+<hr>
+
+<h3 id="toc_13">Logical Operators</h3>
+
+<ul>
+<li>Logical operators are used to chain together boolean logic to make complex conditional statements</li>
+<li>assume x = 5 and y = 9</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Operator</th>
+<th style="text-align: center">Name</th>
+<th style="text-align: center">Example</th>
+<th style="text-align: center">Result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">&amp;&amp;</td>
+<td style="text-align: center">And</td>
+<td style="text-align: center">x &lt; 10 &amp;&amp; X !== 5</td>
+<td style="text-align: center">false</td>
+</tr>
+<tr>
+<td style="text-align: center">||</td>
+<td style="text-align: center">Or</td>
+<td style="text-align: center">y &gt; 9 || x === 5</td>
+<td style="text-align: center">true</td>
+</tr>
+<tr>
+<td style="text-align: center">!</td>
+<td style="text-align: center">Not</td>
+<td style="text-align: center">!(x === y)</td>
+<td style="text-align: center">true</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h3 id="toc_14">Logical Operators specifics</h3>
+
+<ul>
+<li>&amp;&amp; - and - if either one is false, the whole thing is false</li>
+<li>|| - or - if either statement is true it&#39;s true (fyi, this is often refered to as &quot;pipe&quot;)</li>
+<li>! - not - the opposite of whatever comes after (usually in parenthesis)
+
+<ul>
+<li>find whatever is in parenthesis first, then flip to the oposite.</li>
+</ul></li>
+<li>parenthesis are helpful for setting off parts of the equation</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_15">Logical Operators example</h3>
+
+<div><pre><code class="language-none">(T || F) &amp;&amp; ! (F &amp;&amp; T)   // read &quot;true or false and not false and true&quot;
+  ( T )    &amp;&amp; ! ( F )   // evaluate expressions in parentheses
+    T &amp;&amp; !F  // read &quot;true and not false&quot;
+    T &amp;&amp; T  // evaluate not false to true
+    T   // true and true evaluates to true :)</code></pre></div>
+
+<h3 id="toc_16">Why does she keep saying evaluates to?</h3>
+
+<p>That is a fantastic question.  It&#39;s because I need to be very careful with my use of the word equals.
+True is a value.  expressions are not equal to the value true.
+Expressions are truthy - this means they evaluate to true.
+I cannot simply replace an expression that happens to be true right now with the word true, next time it may evaluate to false.  So it&#39;s not the same thing as the value true.  This is why we say it&#39;s truthy and falsey.</p>
+
+<hr>
+
+<h3 id="toc_17">Boolean Logic quiz</h3>
+
+<p>I know, I know.  Another quiz.  But, if you are mixing up symbols here, you will have a hard time recognizing your error when we move on to conditional statements.</p>
+
+
+
+
+</body>
+
+</html>
