@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Lesson 2 - Conditional Statements</h1>
+
+<p>In this lesson you will learn to apply the boolean logic you learned in the last lesson to control the flow of your programs.  You will learn how to write one, two, and multi- part conditional statements in javascript.</p>
+
+<hr>
+
+<h2 id="toc_1">Learning Goals</h2>
+
+<ul>
+<li>Apply boolean logic to single part conditional statements</li>
+<li>Apply boolean logic to two part conditional statements</li>
+<li>Apply boolean logic to multi part conditional statements</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_2">Key Syntax</h2>
+
+<div><pre><code class="language-javascript">if (boolean expression){
+    //execute this code
+} else if (boolean expression) {
+    //execute this code
+} else {
+    //execute this code
+}</code></pre></div>
+
+<hr>
+
+<h2 id="toc_3">Lesson Outline</h2>
+
+<hr>
+
+<h3 id="toc_4">Conditional Statements</h3>
+
+<ul>
+<li>Allow for a variety of outcomes based on a choice that must be made</li>
+<li>Example:</li>
+<li>Outcome: Player wins or player loses</li>
+<li>Options: 
+
+<ul>
+<li>player guessed the right number</li>
+<li>player guessed the wrong number</li>
+<li>player didn&#39;t guess anything at all</li>
+</ul></li>
+<li>A good program has a plan to handle all possible options</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_5">Single Part Conditional Statement</h3>
+
+<div><pre><code class="language-javascript">if (submitted){
+    alert(&quot;Your submission was successful!&quot;)
+};</code></pre></div>
+
+<ul>
+<li>not very common, but it does work</li>
+<li>the alert will only show if the boolean expression is truthy</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_6">2-Part Conditional Statement</h3>
+
+<div><pre><code class="language-javascript">if (submitted){
+  alert(&quot;Submission Successful&quot;)
+} else {
+  alert(&quot;Something went wrong, please resubmit&quot;)
+};</code></pre></div>
+
+<ul>
+<li>if the first boolean is truthy, the code under else will not run.</li>
+<li>if the first boolean is falsey, the code under else will run.</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_7">Multi-Part Conditional Statement</h3>
+
+<div><pre><code class="language-javascript">if (guess == 23){
+  console.log(&quot;That&#39;s my number!  You win!&quot;)
+} else if (guess &gt; 23){
+  console.log(&quot;Sorry, your guess is too high&quot;)
+} else if (guess &lt; 23){
+  console.log(&quot;Sorry, your guess is too low&quot;)
+} else {
+  console.log(&quot;hmm. Something went wrong&quot;)
+}</code></pre></div>
+
+<ul>
+<li>this will evaluate each boolean expression until it finds one that is truthy</li>
+<li>it will run without an else, but the else is often useful for error checking at least.</li>
+</ul>
+
+<hr>
+
+<h1 id="toc_8">And now for the exercises!</h1>
+
+
+
+
+</body>
+
+</html>
