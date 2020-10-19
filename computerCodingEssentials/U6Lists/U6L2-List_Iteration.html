@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+
+
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Iterating over lists</h1>
+
+<ul>
+<li>in this lesson you will learn how to loop through all of the items in a list</li>
+</ul>
+
+<h1 id="toc_1">Lesson Goals</h1>
+
+<ul>
+<li>use a for loop to loop through all the items in a list</li>
+<li>use a while loop to iterate over all the items in a list</li>
+</ul>
+
+<hr>
+
+<h1 id="toc_2">Key Syntaxes</h1>
+
+<div><pre><code class="language-python">#for loop
+for item in list:
+   #do something
+   #use item variable
+#while loop
+my_list = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+i = 0
+while i &lt; len(my_list):
+    print(my_list[i])
+    i += 1</code></pre></div>
+
+<hr>
+
+<h1 id="toc_3">Iterating over a list</h1>
+
+<ul>
+<li>a list is an iterable object!<br></li>
+<li>to iterate means to go through something once for each time in an iterable object</li>
+<li>this code is a bad idea:</li>
+</ul>
+
+<div><pre><code class="language-python">#This is ugly
+print(my_list) #==&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+
+#This is rediculous
+print(my_list[0])
+print(my_list[1])
+print(my_list[2])
+
+#I thought I wasn&#39;t supposed to repeat myself????</code></pre></div>
+
+<hr>
+
+<h1 id="toc_4">Use a for loop to iterate over a list</h1>
+
+<div><pre><code class="language-python">for item in items:
+    print(item)
+
+for num in nums:
+    print(num*num)
+
+for trinket in trinkets:
+    score += 5</code></pre></div>
+
+<hr>
+
+<h1 id="toc_5">Use a while loop to iterate over a list</h1>
+
+<div><pre><code class="language-python">colors = [&quot;red&quot;, &quot;yellow&quot;, &quot;green&quot;]
+index = 0
+
+while index &lt; len(colors):
+    print(colors[index])
+    index += 1</code></pre></div>
+
+<hr>
+
+<h1 id="toc_6">Use a while loop when you want to access the index</h1>
+
+<div><pre><code class="language-python">tasks = [&quot;put clothes in washer&quot;, &quot;add soap to washer&quot;, &quot;select wash cycle&quot;, &quot;run washer&quot;]
+index = 0
+
+while index &lt; len(tasks):
+    num = index +1
+    print(f&quot;{num}.  {tasks[index]}&quot;)
+    index += 1</code></pre></div>
+
+<hr>
+
+<h1 id="toc_7">List Iteration Exercise</h1>
+
+
+
+
+</body>
+
+</html>

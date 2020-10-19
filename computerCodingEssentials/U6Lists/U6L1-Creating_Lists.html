@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Creating Lists</h1>
+
+<p>In this lesson we will learn our first data structure - lists!  We will learn how to create and populate lists and how to access data in our lists.</p>
+
+<h2 id="toc_1">Lesson Goals</h2>
+
+<ul>
+<li>Descripbe, create, and access a list data structure</li>
+</ul>
+
+<h2 id="toc_2">Key Terms to pay attention to</h2>
+
+<ul>
+<li>List</li>
+<li>Index</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_3">Key syntaxes</h2>
+
+<div><pre><code class="language-python">my_list = [item1, item2, item3]
+my_list[0]
+my_list[1]
+my_list[-1]</code></pre></div>
+
+<hr>
+
+<h1 id="toc_4">What is a list</h1>
+
+<ul>
+<li>a list is an ordered collection or grouping of data</li>
+<li>a fundamental data structure for organizing collections of data</li>
+<li>a data structure is a data type that stores data of various types in a structured way</li>
+</ul>
+
+<hr>
+
+<h1 id="toc_5">Bring order to data</h1>
+
+<div><pre><code class="language-python">#disorganized, like a kid&#39;s bedroom
+toy_1 = &quot;red car&quot;
+toy_2 = &quot;dump truck&quot;
+shoe_1 = &quot;blue sneaker&quot;
+sock_1 = &quot;blue striped sock&quot;
+
+#a list lines everything up in order
+on_shelf = [&quot;red car&quot;, &quot;dump truck&quot;, &quot;blue hat&quot;, &quot;green army man&quot;, &quot;buzz lightyear&quot;]
+under_bed = [&quot;blue sneakers&quot;, &quot;red sneakers&quot;, &quot;yellow rainboots&quot;, &quot;black pinchy shoes&quot;]</code></pre></div>
+
+<hr>
+
+<h1 id="toc_6">Another Example</h1>
+
+<div><pre><code class="language-python">#random strings have no relationship
+first_task = &quot;install Python&quot;
+second_task = &quot;Learn Python&quot;
+third_task = &quot;take a break&quot;
+
+#lists show that strings fit together
+tasks = [&quot;install Python&quot;, &quot;Learn Python&quot;, &quot;take a break&quot;]
+
+#I can also use variables to make my list
+tasks = [first_task, second_task, third_task]</code></pre></div>
+
+<hr>
+
+<h1 id="toc_7">What can I put in a list?</h1>
+
+<ul>
+<li>strings, numbers - int and float, variables</li>
+<li>lists - you can put lists inside of other lists.</li>
+<li>other data structures we haven&#39;t learned yet like dictionaries</li>
+<li>any comma separated values</li>
+<li>you can mix data types! - but you usually won&#39;t.</li>
+</ul>
+
+<hr>
+
+<h1 id="toc_8">Make a list</h1>
+
+<ul>
+<li>define an empty list <code>my_list = []</code></li>
+<li>define a list with stuff in it <code>my_list = [&quot;thing&quot;, &quot;another thing&quot;, &quot;something else&quot;, &quot;more things&quot;]</code></li>
+<li>use the list function <code>list()</code> to make a list of a range of numbers
+for example:
+<code>my_list = list(range(1,10))</code></li>
+</ul>
+
+<hr>
+
+<h1 id="toc_9">Creating Lists Exercise</h1>
+
+<hr>
+
+<h1 id="toc_10">Accessing Data in a List</h1>
+
+<ul>
+<li>print(my_list) returns [&quot;thing&quot;, &quot;another thing&quot;, &quot;something else&quot;, &quot;more things&quot;]</li>
+<li>Use the index to find individual items.</li>
+</ul>
+
+<div><pre><code class="language-python">on_shelf = [&quot;red car&quot;, &quot;dump truck&quot;, &quot;blue hat&quot;, &quot;green army man&quot;, &quot;buzz lightyear&quot;]
+under_bed = [&quot;blue sneakers&quot;, &quot;red sneakers&quot;, &quot;yellow rainboots&quot;, &quot;black pinchy shoes&quot;]
+
+on_shelf[0] #&#39;red car&#39;
+on_shelf[4] # &#39;buzz lightyear&#39;
+on_shelf[-1] # &#39;buzz lightyear&#39;
+
+under_bed[2]  # &#39;yellow rainboots&#39;</code></pre></div>
+
+<hr>
+
+<h1 id="toc_11">List Indexes</h1>
+
+<ul>
+<li>each item in the list has an index that defines its position in the list</li>
+<li>index always starts at 0</li>
+<li>access the last item using -1 and can work backwords using negatives</li>
+<li>using the index doesn&#39;t remove anything from the list, it just let&#39;s you see it.</li>
+<li>trying to access an index beyond the end of the list will throw an index error</li>
+</ul>
+
+<hr>
+
+<h1 id="toc_12">Check if an item is in a list</h1>
+
+<div><pre><code class="language-python">&quot;red car&quot; in on_shelf  #True
+&quot;red sneakers&quot; in under_bed  #False</code></pre></div>
+
+<ul>
+<li>use the condintional in to control if statements and while loops</li>
+</ul>
+
+<div><pre><code class="language-python">if &quot;buzz lightyear&quot; in on_shelf:
+    print(&quot;I found Buzz mommy&quot;)
+else:
+    throw(full_tantrum)</code></pre></div>
+
+<hr>
+
+<h1 id="toc_13">The key points</h1>
+
+<ul>
+<li>every item has an index which starts at zero</li>
+<li>access items in list using brackets &amp; the index</li>
+<li>if you try to use an index that is larger than the list you get an error</li>
+<li>go backwards using negative numbers</li>
+<li>use in to check for the presence of items in the list</li>
+</ul>
+
+<hr>
+
+<h1 id="toc_14">Exercise  --  Accessing list Data</h1>
+
+
+
+
+</body>
+
+</html>
