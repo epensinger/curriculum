@@ -8,13 +8,14 @@
 
 ----
 
- # Key Syntaxes
- ```python
- #for loop
- for item in list:
+# Key Syntaxes
+```python
+#for loop
+for item in list:
     #do something
     #use item variable
-
+```
+```python
 #while loop
 my_list = ["a", "b", "c"]
 i = 0
