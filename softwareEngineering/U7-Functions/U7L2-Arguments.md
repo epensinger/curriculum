@@ -31,6 +31,7 @@ fuction my_function(arg) {
 ### Math Class Alert
 
 f(x) = 2x
+
 | Input | Relationship | Output |
 |-------|--------------|--------|
 | 2     | *2           | 4      |
@@ -72,3 +73,45 @@ greet("Bugs Bunny")
 ## What if I don't?
 - if you try to pass an argument to a function that doesn't want it, the function just runs and ignores it.
 - if you don't pass an argument that it was expecting, it uses undefined for that value and runs normally.
+
+
+----
+
+----
+
+## Arguments Exercises 1
+
+
+----
+
+### Functions with Multiple Arguments
+- to pass multiple arguments to a function, add them one after another with commas between.
+- the ORDER is what determines which is which
+
+
+----
+
+### Mutliple Args example
+```javascript
+function rect_area(length, width) {
+    console.log(length*width;
+};
+
+rect_area(5, 10);
+```
+
+```javascript
+function greet(first, last) {
+    console.log("Welcome Mr. ${last}, how are you today ${first}");
+}
+
+greet("Elmer", "Fudd");
+greet("Buggs", "Bunny");
+greet("Daffy", "Duck");
+```
+
+
+----
+
+## Multiple Arguments exercise
+
