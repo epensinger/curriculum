@@ -26,6 +26,9 @@ names.index('Steve') #==> 2
 
 ```
 
+
+----
+
 ## Limit index
 - add arguments to limit the start and end of possible indexes
 ex:
