@@ -84,7 +84,3 @@ If I already typed a complex conditional test, I can just copy and paste and use
 
 -----
 
-### Boolean Logic Quiz
-
-
-### Bouncer Code Along
