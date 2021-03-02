@@ -56,11 +56,6 @@ else:
 
 ----
 
-### Classifying Food Exercise
-
-
-----
-
 ### Example - Not
 - only works with one statement (no double negatives here!)
 
