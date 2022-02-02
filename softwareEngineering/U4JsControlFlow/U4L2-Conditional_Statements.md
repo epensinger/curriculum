@@ -1,4 +1,4 @@
-# Lesson 2 - Conditional Statements
+# Lesson 3 - Conditional Execution
 In this lesson you will learn to apply the boolean logic you learned in the last lesson to control the flow of your programs.  You will learn how to write one, two, and multi- part conditional statements in javascript.
 
 
